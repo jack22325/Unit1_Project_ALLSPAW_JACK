@@ -17,8 +17,21 @@ public class Main {
         double totalBillWithTip = (billNum*tipMultiplier);
         double tipAmount = (totalBillWithTip-billNum);
         double tipPerPerson = (tipAmount/peopleNum);
-
-
-
+        double totalBillPerPerson = (totalBillWithTip/peopleNum);
+        double totalBillWithTipRounded = (double) ((int) (totalBillWithTip*100)/100.0);
+        double tipAmountRounded = (double) ((int) (tipAmount*100)/100.0);
+        double tipPerPersonRounded = (double) ((int) (tipPerPerson*100)/100.0);
+        double totalBillPerPersonRounded = (double) ((int) (totalBillPerPerson*100)/100.0);
+        System.out.println();
+        System.out.println("--------------------");
+        System.out.print("Total tip amount: $");
+        System.out.println(tipAmountRounded);
+        System.out.print("Total bill with tip cost: $");
+        System.out.println(totalBillWithTipRounded);
+        System.out.print("Tip per person: $");
+        System.out.println(tipPerPersonRounded);
+        System.out.print("Total bill per person: $");
+        System.out.println(totalBillPerPersonRounded);
+        System.out.println("--------------------");
         }
     }
