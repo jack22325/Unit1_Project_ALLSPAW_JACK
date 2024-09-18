@@ -4,9 +4,11 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
+        // Do not use a dollar sign for any amount of money
         System.out.println("Enter the total bill: ");
         String bill = s.nextLine();
         double billNum = Double.parseDouble(bill);
+        // Do not use a percentage sign for the tip percentage
         System.out.println("Enter the tip percentage as a whole number: ");
         String tipPercentage = s.nextLine();
         double tipPercentageNum = Double.parseDouble(tipPercentage);
